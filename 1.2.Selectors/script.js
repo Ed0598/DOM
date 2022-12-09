@@ -44,6 +44,5 @@ for (elem of para){
         elem.style.color = randomRgbColor()
          
     }
-}
-       
+}     
 console.log(randomRgbColor());
