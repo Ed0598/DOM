@@ -11,15 +11,9 @@ const clickOnSquare = (e) => {
   section.appendChild(div);
   ul=document.getElementsByTagName('ul')[0];
   let li= document.createElement('li')
-  li.textContent= (getElapsedTime(),e.target.classList[1])
+  li.textContent= ("["+getElapsedTime()+"]"+ "Created a new "+e.target.classList[1] + " square")
   ul.appendChild(li)
   console.log(e.target.classList[1])
   console.log(getElapsedTime())
 
 }
-
-const actionSquares = document.querySelectorAll('.actionsquare')
-for (let actionSquare of actionSquares) {
-  actionSquare.addEventListener('click', clickOnSquare)
-}
-
